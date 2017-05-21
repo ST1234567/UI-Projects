@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>Animations</title>
+<head>
+<style>
+.spin{
+	position: absolute; 
+	left: 100px; 
+	top: 100px; 
+	width: 100px; 
+	height: 100px; 
+	background: yellow;
+	-webkit-animation: spin 2s infinite linear;
+	text-align:center;
+}
+
+.move{
+	position: absolute; 
+	left: 100px; 
+	top: 100px; 
+	width: 100px; 
+	height: 100px; 
+	background: blue;
+	-webkit-animation: spin 5s infinite linear;
+	text-align:center;
+}
+
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}
+
+@-webkit-keyframes move {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}
+
+
+p{
+
+	text-align: center;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="spin"></div>
+<div class="move"></div>
+
+<p> I have created this animation using webkit keyframes. Animations are the most interesting concepts in CSS which I can enjoy while developing</p>
+
+
+</body>
+</html>

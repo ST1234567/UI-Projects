@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<title>Three Coloumn Responsive Layout</title>
+<head>
+<style>
+body { 
+  font-family: 'Open Sans', sans-serif;
+  background-color: grey;
+  border:double;
+}
+
+h1{
+	background-color: yellow;
+	border:double;
+}
+
+#abc {
+	padding: 9px;
+	width: 960px;
+	margin: 25px auto;
+}
+header {
+	height: 98px;
+	padding: 0 15px;
+}
+#def {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#ghi {
+	width: 294px; 
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#jkl {
+	width: 270px;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 5px;
+	font-size:9px;
+	font-family: italic;
+	border:double;
+	background-color: yellow;
+
+}
+
+
+/* for 960px or less */
+@media screen and (max-width: 960px) {
+	
+	#abc{
+		width: 94%;
+	}
+	#def {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#ghi {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#jkl{
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 680px) {
+
+	#def {
+		width: auto;
+		float: none;
+	}
+	
+	#ghi {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#jkl {
+		width: auto;
+		float: none;
+	}
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div id="abc">
+
+	<header>
+		<h1>Welcome To My Three Column Responsive Layout</h1>
+	</header>
+		
+	<section id="def">
+		<h2>About this Layout</h2>
+		<p>This Three coloumn Responsive Layout is very basic and most used layout </p>
+		<p>I have designed and developed this based on the knowledge of Front-End Development that I have gained from my project based experience and work based experience.
+	</section>
+	
+	<section id="ghi">
+		<h2> Why Three Coloumn Responsive layout</h2>
+		<p>I have prioritized this layout mainly because this layout brings a smart and beautiful look with concise view and used by almost many websites to describe clearly about the description of contents</p>
+		<p>I have used CSS3 media queries for making the page viewed in 960px or less and 680px or less media screens</p>
+		<p> Media Queries check many things like width and height of viewport, device, resolution nad orientation(landscape or portrait)
+	</section>
+
+	<aside id="jkl">
+		<h2>How I have done this Layout</h2>
+		<p>Firstly, I have designed whole page in a piece of paper and I choosed sublime which is my most favourite coding editor that helped me alot for making my hands-on practice possible. Later on, I have implemented the design into development using HTML5 and CSS3</p>
+		
+	</aside>
+	
+
+</div>
+
+
+</body>
+
+
+	<footer>
+	
+		<p>Created by Sravya Tadakamalla</p>
+	</footer>
+</html>
