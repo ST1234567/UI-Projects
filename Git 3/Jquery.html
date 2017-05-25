@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-color:skyblue;
+	border-style:dashed;
+	padding-left:4px;
+	margin:0,auto;
+	font-style:oblique;
+	font-weight:800px;
+font-family:serif;
+
+}
+footer{
+
+background-color:black;
+color:white;
+margin-top:270px;
+}
+
+#add{
+
+	width:250px;
+	margin-left:105px;
+	
+}
+
+button{
+
+	text-align:center;
+	margin-left:510px;
+}
+
+
+
+#div1{
+	margin-left:1px;
+	
+}
+
+#slideme, #result {
+    padding: 5px;
+    text-align: center;
+    background-color: seashell;
+    border: solid 1px brown;
+}
+
+#result {
+    padding: 50px;
+    display: none;
+    background-color:brown;
+    color:white;
+}
+p{
+		margin-left:5px;
+		border:double;
+		border-color:red;
+		text-align:center;
+		margin:right:5px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    
+        $("input:text").val("Sorry! that item is not available here!");
+    });
+});
+
+
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").remove();
+    });
+});
+
+
+
+
+$(document).ready(function(){
+    $("#slideme").click(function(){
+        $("#result").slideDown("fast");
+    });
+});
+</script>
+</head>
+<body>
+
+<p>Check to verify that the food item you just entered is available here<input type="text" id="add" name="user"></p>
+
+
+<button>Type any food that you want above and press me</button> 
+
+<p>Whenever you type any food that you want and press above button, you can see an automatic text appear. I made it happened by using JQuery</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div id="div1">
+<p>How I created this? I have used remove method in JQuery.The jQuery remove() method removes the selected element(s) and its child elements</p>
+
+
+</div>
+
+
+<br>
+
+<button>Don't want to see about how I created this? Then press me! </button><br><br>
+
+<div id="slideme">Click to view the secret key</div>
+<div id="result">----67560ppl8l905lkivgeh478498XXXXXXNNNN9090-----</div>
+
+<p> I just made this by using JQuery slideDown method</p>
+
+<footer>
+<p>Created by Sravya Tadakamalla on the year 2017</p>
+</footer>
+</body>
+</html>
