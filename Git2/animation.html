@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<title>Animations</title>
+<head>
+<style>
+body{
+
+	border: 45px solid;
+    -webkit-border-image: url(http://graphicdesignjunction.com/wp-content/uploads/2012/10/background+pattern+design+1.jpg)45 repeat;
+    -moz-border-image: url(http://graphicdesignjunction.com/wp-content/uploads/2012/10/background+pattern+design+1.jpg)45 repeat;
+    border-image: url(http://graphicdesignjunction.com/wp-content/uploads/2012/10/background+pattern+design+1.jpg)45 repeat;
+    -o-border-image: url(http://graphicdesignjunction.com/wp-content/uploads/2012/10/background+pattern+design+1.jpg)45 repeat;
+    background-color:beige;
+}
+.spin{
+	position: absolute; 
+	left:650px;
+    top: 337px;
+	width: 100px; 
+	height: 100px; 
+	background: yellow;
+	-webkit-animation: spin 2s infinite linear;
+	margin: 0 auto;
+}
+
+.move{
+	position: absolute; 
+	left: 650px;
+    top: 337px;
+	width: 100px; 
+	height: 100px; 
+	background: blue;
+	-webkit-animation: spin 5s infinite linear;
+	margin: 0 auto;
+}
+
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}
+
+@-webkit-keyframes move {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}
+
+
+h1{
+
+	text-align: center;
+	color:blue;
+	background-color:powderblue;
+	border:solid;
+	margin-top:2px;
+
+}
+
+footer{
+	text-align: center;
+	color:blue;
+	background-color:powderblue;
+	border:solid;
+	margin-top:900px;
+	margin-bottom:2px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="spin"></div>
+<div class="move"></div>
+
+<h1> I have created this animation using webkit keyframes. Animations are the most interesting concepts in CSS which I can enjoy while developing</h1>
+
+<footer>
+<h2>Crated By Sravya Tadakamalla</h2>
+</body>
+</html>
